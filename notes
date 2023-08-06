@@ -16,5 +16,26 @@ WHAT IS VIRTUALIZED
 VM runs on a kind of hardware where an OS is installed
 
 Container do not require a separate OS. instead, they use the host
-sytem's OS kernel which makes them lightweight and allows them 
+sytem{"'"}s OS kernel which makes them lightweight and allows them 
 to start quickly and use fewer resources
+
+
+CONTAINERS ARE MADE OF LAYERS
+
+3. Apllication
+2.Customization
+1.Base OS
+
+
+
+ORCHESTRATOR
+ 
+Manages 
+  infrastructure
+  CONTAINERSdeployment
+  scaling
+  failover
+  health monitoring
+  App upgrades, zero-downtime deployments
+
+  
