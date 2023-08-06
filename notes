@@ -67,3 +67,11 @@ you can specify the limit of the memory and CPU a container use
 docker run --memory="256m" ngnix
 docker run --cpus=".5" ngnix
 ```
+
+
+RUNNING CONTAINER
+
+docker run --publish 80:80 --name webserver ngnix
+    80: 80 : maps the host port to the container listing port
+    webserver: container local name
+    ngnix: container image in the docker regisrty
