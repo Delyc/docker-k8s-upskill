@@ -38,4 +38,15 @@ Manages
   health monitoring
   App upgrades, zero-downtime deployments
 
-  
+
+DOCKER CLI BASIC COMMANDS
+
+docker pull [imageName]  :  Pull an image from a registry
+docker run [imageName]   :  run container(if the image is not present in local docker cashe, it will be downloaded)
+dokcer run -d [imageName] : runs a container in detached mode (in background)
+docker start [containerName] : start stopped containers
+docker ps : list running containers
+docker ps -a : list running containers and stopped containers
+docker stop [containerName] : stop containers ( stop a running container but the container will still be in memory)
+docker kill [containerName] : kill containers that might be stuck in memory
+docker image inspect [imageName] : get image info
