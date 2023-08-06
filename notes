@@ -40,7 +40,7 @@ Manages
 
 
 DOCKER CLI BASIC COMMANDS
-
+```
 docker pull [imageName]  :  Pull an image from a registry
 docker run [imageName]   :  run container(if the image is not present in local docker cashe, it will be downloaded)
 dokcer run -d [imageName] : runs a container in detached mode (in background)
@@ -50,3 +50,20 @@ docker ps -a : list running containers and stopped containers
 docker stop [containerName] : stop containers ( stop a running container but the container will still be in memory)
 docker kill [containerName] : kill containers that might be stuck in memory
 docker image inspect [imageName] : get image info
+```
+
+
+IMAGE NAME VS CONTAINER NAME
+
+The IMAGE NAME is the name of the image as you find it in the container regisrty
+The CONTAINER NAME is the name of a running container
+
+you run an image using its name and interact with it using  the running instance name
+
+
+you can specify the limit of the memory and CPU a container use
+
+```
+docker run --memory="256m" ngnix
+docker run --cpus=".5" ngnix
+```
